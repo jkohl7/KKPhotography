@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>KKPhotography.com</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+          integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+
+
+</head>
+<body>
+
+<div id="app">
+    <!--Navigation bar for each page -->
+    <div class="title-bar">KK Photography</div>
+    <nav class="navbar">
+                    <router-link to="/home" class="nav-link">Home</router-link>
+                    <router-link to="/gallery" class="nav-link">Gallery</router-link>
+                    <router-link to="/pricing" class="nav-link">Pricing</router-link>
+                    <router-link to="/schedule" class="nav-link">Schedule</router-link>
+                    <router-link to="/about" class="nav-link">About</router-link>
+
+    </nav>
+    <router-view></router-view>
+    <!--footer for each page -->
+    <div class="footer">
+        <p>All images taken by KK Photography LLC. are subject to Copyright.</p>
+    </div>
+
+</div>
+
+<script src="https://unpkg.com/vue/dist/vue.js"></script>
+<script src="https://unpkg.com/vue-router/dist/vue-router.js"></script>
+
+<script src="js/app-pages.js"></script>
+<script src="js/app.js"></script>
+
+</body>
+</html>
